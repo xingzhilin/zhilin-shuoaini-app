@@ -2,36 +2,47 @@
 	<div class="container">
 		<div class="header_wrap">
 			<div class="banner_bg"></div>
-			<el-row :gutter="24">
-			  <el-col :span="2">
+
+
+
+			<el-row class="row_wrap">
+			  <el-col :xs="8" :sm="6" :md="4" :lg="4" >
 			  	<div class="logo">
 					<span>LOVEYOU</span>
 				</div>
 			  </el-col>
-			  <el-col :span="14">
+			  <el-col :xs="8" :sm="4" :md="8" :lg="12">
 			  	<el-menu 
 			  		:default-active="activeIndex"
 					class="el-menu-demo"
 					text-color="rgba(255,255,255,.8)"
 					mode="horizontal">
-				    <el-menu-item index="1">首页</el-menu-item>
-				    <el-menu-item index="1">感文</el-menu-item>
-				    <el-menu-item index="1">感问</el-menu-item>
-				    <el-menu-item index="1">感识</el-menu-item>
+				    <el-menu-item index="1"><router-link :to="{name: 'homeLink'}">首页</router-link></el-menu-item>
+				    <el-menu-item index="1"><router-link :to="{name: 'articlesLink'}">感文</router-link></el-menu-item>
+				    <el-menu-item index="1"><router-link :to="{name: 'questionsLink'}">感问</router-link></el-menu-item>
+				    <el-menu-item index="1"><router-link :to="{name: 'emotionsLink'}">感识</router-link></el-menu-item>
 				</el-menu>
 			  </el-col>
-			  <el-col :span="4">
+			  <el-col :xs="8" :sm="6" :md="4" :lg="4">
 			  	<el-form ref="form" :model="form" label-width="80px">
-					<el-form-item placeholder="搜索你喜欢的">
-						<el-input v-model="form.name"></el-input>
+					<el-form-item>
+						<el-input class="search" placeholder="搜索你喜欢的" v-model="form.name"></el-input>
 					</el-form-item>
 				</el-form>
 			  </el-col>
-			  <el-col :span="4">
+			  <el-col :xs="6" :sm="6" :md="4" :lg="4">
 			  	<el-button type="primary">注册</el-button>
 				<el-button>登录</el-button>
 			  </el-col>
 			</el-row>
+			<div class="search_main">
+				<h3>爱TA，就赶紧向TA告白吧！</h3>
+				<el-form ref="form" :model="form" label-width="80px">
+					<el-form-item>
+						<el-input class="search_input" placeholder="搜索你喜欢的" v-model="form.name"></el-input>
+					</el-form-item>
+				</el-form>
+			</div>
 		</div>
 	</div>
 </template>
@@ -74,6 +85,9 @@
 		    background-size: cover;
 		    transition: opacity .2s ease-in-out;
 		}
+		.row_wrap{
+			padding-top:15px;
+		}
 		.logo{
 			color: #FFF;
 			font-size:20px;	
@@ -101,6 +115,31 @@
 		.el-header{
 			height: 500px;
 			padding:0;
+		}
+		.el-form-item__content{
+			margin-left:0;
+		}
+		.search{
+			width: 200px;
+			margin-left: -60px;
+		}
+		.search_main{
+			width:800px;
+			margin:100px auto;
+			h3{
+				color: #000;
+				text-shadow: 5px 3px 5px #ccc;
+				text-align: center;
+				font-size: 36px;
+			}
+		}
+		.search_wrap{
+
+			.search_input{
+				width:60%;
+				margin:10px auto;
+				margin-left: -80px;
+			}
 		}
 	}
 </style>

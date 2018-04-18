@@ -1,19 +1,18 @@
 <template>
-	<div class="navbarItem">
+	<div class="container">
 		<h1>{{msg}}</h1>
-		
 	</div>
 </template>
 <script>
 	export default {
-		name: 'NavbarItemView',
+		name: 'edit',
 		data(){
 			return {
-				msg: 'NavbarItemView'
+				msg: 'Edit'
 			}
 		}
 	}
 </script>
-<style>
-
+<style scoped lang="scss">
+	
 </style>

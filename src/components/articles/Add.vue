@@ -5,10 +5,10 @@
 </template>
 <script>
 	export default {
-		name: 'questions',
+		name: 'add',
 		data(){
 			return {
-				msg: 'Questions'
+				msg: 'Add'
 			}
 		}
 	}

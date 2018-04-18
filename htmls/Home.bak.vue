@@ -1,12 +1,59 @@
 <template>
 	<el-container>
-		<el-header height="500px">
-			<HeaderNav></HeaderNav>
-		</el-header>
-		<el-main>
-			<router-view></router-view>
-		</el-main>
-		<el-footer>Footer</el-footer>
+	  <el-header height="400px">
+	  	<HeaderNav></HeaderNav>
+	  </el-header>
+	  <el-main>
+	  		
+	  		<div class="block">
+			    <span class="demonstration">起始日期时刻为 12:00:00</span>
+			    <el-date-picker
+			      v-model="first"
+			      type="datetimerange"
+			      start-placeholder="开始日期"
+			      end-placeholder="结束日期"
+			      @focus="test"
+			      @change="change"
+			      :default-time="['12:00:00']">
+			    </el-date-picker>
+			</div>
+			
+			<div class="test">
+				<el-input
+				  placeholder="请输入内容"
+				  v-model="input"
+				  @blur="blur"
+				  v-on:input="blur"
+				  clearable>
+				</el-input>
+			</div>
+
+			<div class="block">
+			    <el-date-picker
+			      v-model="dateStart"
+			      type="date"
+			      placeholder="选择日期">
+			    </el-date-picker>
+			    <el-date-picker
+			      v-model="dateEnd"
+			      type="date"
+			      placeholder="选择日期">
+			    </el-date-picker>
+			</div>
+
+			<el-upload
+				class="avatar-uploader"
+				action="https://wd7552920655trwouc.wilddogio.com/upload"
+				:show-file-list="false"
+				:on-success="handleAvatarSuccess"
+				:before-upload="beforeAvatarUpload">
+				<img v-if="imageUrl" :src="imageUrl" class="avatar">
+				<i v-else class="el-icon-plus avatar-uploader-icon"></i>
+			</el-upload>
+
+
+	  </el-main>
+	  <el-footer>Footer</el-footer>
 	</el-container>
 </template>
 <script>

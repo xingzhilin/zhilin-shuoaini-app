@@ -5,10 +5,10 @@
 </template>
 <script>
 	export default {
-		name: 'questions',
+		name: 'articlesIndex',
 		data(){
 			return {
-				msg: 'Questions'
+				msg: 'ArticlesIndex'
 			}
 		}
 	}
