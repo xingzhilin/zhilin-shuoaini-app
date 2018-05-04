@@ -6,15 +6,17 @@
 		<el-main>
 			<router-view></router-view>
 		</el-main>
-		<el-footer>Footer</el-footer>
+		<Footer></Footer>
 	</el-container>
 </template>
 <script>
 	import HeaderNav from './HeaderNav'
+	import Footer from './Footer'
 	export default {
 		name: 'Home',
 		components:{
-			HeaderNav
+			HeaderNav,
+			Footer
 		},
 		data(){
 			return {
@@ -91,4 +93,10 @@
     height: 178px;
     display: block;
   }
+
+.el-footer{
+	box-sizing: border-box;
+	background-color: #31373B;
+	min-height: 300px;
+}
 </style>
