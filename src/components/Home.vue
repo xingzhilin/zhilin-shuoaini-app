@@ -1,6 +1,6 @@
 <template>
 	<el-container>
-		<el-header height="500px">
+		<el-header>
 			<HeaderNav></HeaderNav>
 		</el-header>
 		<el-main>
@@ -66,9 +66,9 @@
 		}
 	}
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 	.el-header{
-		height: 500px;
+		height: 500px!important;
 	}
 	.avatar-uploader .el-upload {
     border: 1px dashed #d9d9d9;
@@ -93,7 +93,9 @@
     height: 178px;
     display: block;
   }
-
+.el-main{
+	min-height: 400px;
+}
 .el-footer{
 	box-sizing: border-box;
 	background-color: #31373B;

@@ -1,6 +1,12 @@
 <template>	
 	<div class="container">
-		联系我们
+		<div class="contactMe">
+            <p><span>QQ：</span>550449252</p>
+            <p><span>Emial：</span>550449252@qq.com</p>
+            <p><span>Tel：</span>17701035944</p>
+            <p><span>weibo：</span></p>
+            <p><span>vChart：</span>xzl52199</p>
+        </div>
 	</div>
 </template>
 
@@ -21,9 +27,19 @@
 </script>
 
 <style scoped lang="scss">
-	.el-footer{
-		box-sizing: border-box;
-		background-color: #31373B;
-		min-height: 300px;
+	.contactMe{
+		line-height: 30px;
+		background: rgba(255, 255, 255, .5);
+		border-radius: 10px;
+		margin: 0 auto;
+		color: #2c3e50;
+	}
+	.contactMe p{
+		padding-left: 20px;
+	    line-height: 36px;
+	    font-size: 20px;
+	}
+	.contactMe p span{
+	    font-size: 20px;
 	}
 </style>

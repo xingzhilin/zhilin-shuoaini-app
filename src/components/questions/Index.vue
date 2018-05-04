@@ -8,11 +8,14 @@
 		name: 'questions',
 		data(){
 			return {
-				msg: 'Questions'
+				msg: '网站相关模块正在开发中~~~敬请期待哦(⊙o⊙)'
 			}
 		}
 	}
 </script>
 <style scoped lang="scss">
-	
+	h1{
+		text-align:center;
+		padding-top: 40px;
+	}
 </style>

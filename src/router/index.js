@@ -14,6 +14,7 @@ import ResumeIndex from './../components/resume/Index'
 import ResumeError from './../components/resume/Error'
 
 import AboutIndex from './../components/about/Index'
+import AboutUs from './../components/about/Us'
 import AboutContact from './../components/about/Contact'
 import AboutAuthor from './../components/about/Author'
 
@@ -43,6 +44,29 @@ const routes = [
         path:'/questions',
         name: 'questionsLink',
         component: Questions
+      },
+      {
+        path:'/about',
+        name: 'aboutLink',
+        component: AboutIndex,
+        redirect: '/about/us',
+        children: [   
+          {
+            path:'/about/us',
+            name: 'aboutUsLink',
+            component: AboutUs
+          },   
+          {
+            path:'/about/contact',
+            name: 'aboutContactLink',
+            component: AboutContact
+          },
+          {
+            path:'/about/author',
+            name: 'aboutAuthorLink',
+            component: AboutAuthor
+          }
+        ]
       }
     ]
   },
@@ -60,28 +84,6 @@ const routes = [
     path:'/error',
     name: 'errorLink',
     component: ResumeError
-  },
-  {
-    path:'/about',
-    name: 'aboutLink',
-    component: AboutIndex,
-    children: [   
-      {
-        path:'/about/us',
-        name: 'aboutUsLink',
-        component: AboutIndex
-      },   
-      {
-        path:'/about/contact',
-        name: 'aboutContactLink',
-        component: AboutContact
-      },
-      {
-        path:'/about',
-        name: 'aboutAuthorLink',
-        component: AboutAuthor
-      }
-    ]
   }
 ]
 
