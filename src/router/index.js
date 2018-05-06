@@ -18,6 +18,11 @@ import AboutUs from './../components/about/Us'
 import AboutContact from './../components/about/Contact'
 import AboutAuthor from './../components/about/Author'
 
+import MAppIndex from './../components/app/Index'
+
+
+import Tips from './../components/common/Tip'
+
 Vue.use(Router)
 
 const routes = [
@@ -67,7 +72,12 @@ const routes = [
             component: AboutAuthor
           }
         ]
-      }
+      }/*,
+      {
+        path: '/app',
+        name: 'appIndexLink',
+        component: MAppIndex
+      }*/
     ]
   },
 	{
@@ -84,6 +94,11 @@ const routes = [
     path:'/error',
     name: 'errorLink',
     component: ResumeError
+  },
+  {
+    path: '/tips',
+    name: 'tipsLink',
+    component: Tips
   }
 ]
 
