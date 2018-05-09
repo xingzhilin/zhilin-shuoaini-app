@@ -1,6 +1,6 @@
 # shuoaini-app
 
-> A Vue.js project
+> A Vue.js project by zhilin
 
 ## Build Setup
 
