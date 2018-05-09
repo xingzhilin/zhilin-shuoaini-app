@@ -1,27 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './../components/Home'
-import Login from './../components/Login'
-import Register from './../components/Register'
+import Home from './../components/pages/Home'
+import Login from './../components/pages/Login'
+import Register from './../components/pages/Register'
 
-import FeelArticles from './../components/articles/Index'
+import FeelArticles from './../components/pages/articles/Index'
 
-import Emotions from './../components/emotions/Index'
+import Emotions from './../components/pages/emotions/Index'
 
-import Questions from './../components/questions/Index'
+import Questions from './../components/pages/questions/Index'
 
-import ResumeIndex from './../components/resume/Index'
-import ResumeError from './../components/resume/Error'
+import ResumeIndex from './../components/pages/resume/Index'
+import ResumeError from './../components/pages/resume/Error'
 
-import AboutIndex from './../components/about/Index'
-import AboutUs from './../components/about/Us'
-import AboutContact from './../components/about/Contact'
-import AboutAuthor from './../components/about/Author'
+import AboutIndex from './../components/pages/about/Index'
+import AboutUs from './../components/pages/about/Us'
+import AboutContact from './../components/pages/about/Contact'
+import AboutAuthor from './../components/pages/about/Author'
 
-import MAppIndex from './../components/app/Index'
+import MAppIndex from './../components/m/Index'
 
 
-import Tips from './../components/common/Tip'
+import Tips from './../components/pages/common/Tip'
 
 Vue.use(Router)
 
@@ -72,12 +72,7 @@ const routes = [
             component: AboutAuthor
           }
         ]
-      }/*,
-      {
-        path: '/app',
-        name: 'appIndexLink',
-        component: MAppIndex
-      }*/
+      }
     ]
   },
 	{
@@ -99,6 +94,11 @@ const routes = [
     path: '/tips',
     name: 'tipsLink',
     component: Tips
+  },
+  {
+    path: '/m/index',
+    name: 'appIndexLink',
+    component: MAppIndex
   }
 ]
 

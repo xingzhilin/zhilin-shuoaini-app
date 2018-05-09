@@ -20,7 +20,7 @@
 	</el-container>
 </template>
 <script>
-	import { requestLogin } from './../api/api'
+	import { requestLogin } from './../../api/api'
 	export default {
 	data() {
 	  return {
@@ -81,7 +81,7 @@
 	}
 </style>
 <style lang="scss" scoped>
-	/* @import './../assets/css/login_view.css' */
+	/* @import './../../assets/css/login_view.css' */
 	.el-header{
 		height: 100px;
 		h1{

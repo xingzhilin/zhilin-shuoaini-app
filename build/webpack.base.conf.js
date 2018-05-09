@@ -3,15 +3,14 @@ const path = require('path')
 const webpack = require('webpack')
 const utils = require('./utils')
 const config = require('../config')
+const vuxLoader = require('vux-loader')
 const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-
-
-module.exports = {
+const webpackConfig = {
   plugins: [
       new webpack.ProvidePlugin({  
           $: 'jquery/dist/jquery.min.js',  
@@ -88,3 +87,8 @@ module.exports = {
     child_process: 'empty'
   }
 }
+
+
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: ['vux-ui']
+})

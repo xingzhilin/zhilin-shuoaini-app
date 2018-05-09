@@ -79,7 +79,7 @@
 		    height: 100%;
 		    width: 100%;
 		    opacity: .8;
-		    background-image: url(./../assets/images/banner_bg.jpg);
+		    background-image: url(./../../assets/images/banner_bg.jpg);
 		    background-position: center 0;
 		    background-repeat: no-repeat;
 		    background-size: cover;
