@@ -18,10 +18,10 @@ import AboutUs from './../components/pages/about/Us'
 import AboutContact from './../components/pages/about/Contact'
 import AboutAuthor from './../components/pages/about/Author'
 
-import MAppIndex from './../components/m/Index'
-
-
 import Tips from './../components/pages/common/Tip'
+
+import MIndex from './../components/m/Index'
+
 
 Vue.use(Router)
 
@@ -96,9 +96,9 @@ const routes = [
     component: Tips
   },
   {
-    path: '/m/index',
-    name: 'appIndexLink',
-    component: MAppIndex
+    path: '/mApp',
+    name: 'mLink',
+    component: MIndex
   }
 ]
 

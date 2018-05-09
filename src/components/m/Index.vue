@@ -7,9 +7,14 @@
 	import { ViewBox } from 'vux'
 
 	export default {
-	  components: {
-	    ViewBox
-	  }
+		data(){
+			return {
+				msg: 'mApp'
+			}
+		},
+		components: {
+			ViewBox
+		}
 	}
 </script>
 <style></style>
