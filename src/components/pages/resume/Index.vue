@@ -11,7 +11,7 @@
 	                 <span class="iBtn" id="tAbout">关于我</span>
 	                 <span class="workBtn" id="tWork">工作经历</span>
 	            </div>
-	            <div id="goTop"><img src="./../../assets/images/resume/goTop.png" alt="回到顶部"></div>
+	            <div id="goTop"><img src="./../../../assets/images/resume/goTop.png" alt="回到顶部"></div>
 	        </section>
 	        <section id="page2" class="section">
 	            <div id="nav-bar" class="bar -fixed">
@@ -27,7 +27,7 @@
 	                        <li class="">联系我</li>
 	                    </ul>
 	                    <div class="fr more-nav">
-	                        <img src="./../../assets/images/resume/more.png" height="70" width="70" alt="更多">
+	                        <img src="./../../../assets/images/resume/more.png" height="70" width="70" alt="更多">
 	                    </div>
 	                </div>
 	                <ul class="nav-ul nav-xs-ul" style="display: none;">
@@ -42,7 +42,7 @@
 	                <h1>关于我</h1>
 	                <hr>
 	                <div class="myPhoto">
-	                    <img src="./../../assets/images/resume/myPhoto.jpg">
+	                    <img src="./../../../assets/images/resume/myPhoto.jpg">
 	                </div>
 	                <div class="myInfoText">
 	                    <p> 我叫邢智琳，坐标北京，是一名Web前端开发工程师，大学专业是计算机系经济信息管理专业，大学中学习了网页三剑客、数据库原理 ，C语言等相关计算机的课程。2011年六月毕业之后，一直从事前端的工作，从最开始的网页设计，flash动画，网页切图，2012年之后一直专注于web前端（HTML、CSS和JavaScript）的开发。</p>
@@ -56,27 +56,27 @@
 	            <hr>
 	            <div class="jobIntension">
 	                <dl>
-	                    <dt><img src="./../../assets/images/resume/qzyx_icon_1.gif"></dt>
+	                    <dt><img src="./../../../assets/images/resume/qzyx_icon_1.gif"></dt>
 	                    <dd>ps切图</dd>
 	                    <dd>从PSD上切出页面需要的图片将小图标合成spirts优化。</dd>
 	                </dl>
 	                <dl>
-	                    <dt><img src="./../../assets/images/resume/qzyx_icon_2.gif"></dt>
+	                    <dt><img src="./../../../assets/images/resume/qzyx_icon_2.gif"></dt>
 	                    <dd>网页制作</dd>
 	                    <dd>响应式页面,简单不冗余代码。css3流畅动画效果，兼容不同浏览器。</dd>
 	                </dl>
 	                <dl>
-	                    <dt><img src="./../../assets/images/resume/qzyx_icon_3.gif"></dt>
+	                    <dt><img src="./../../../assets/images/resume/qzyx_icon_3.gif"></dt>
 	                    <dd>前端功能</dd>
 	                    <dd>用JS完成常见的前端功能特效用AJAX读取后台数据。</dd>
 	                </dl>
 	                <dl>
-	                    <dt><img src="./../../assets/images/resume/qzyx_icon_4.gif"></dt>
+	                    <dt><img src="./../../../assets/images/resume/qzyx_icon_4.gif"></dt>
 	                    <dd>H5页面</dd>
 	                    <dd>移动端(Mobile)页面的书写兼容平板、安卓、IOS不同终端。</dd>
 	                </dl>
 	                <dl>
-	                    <dt><img src="./../../assets/images/resume/qzyx_icon_5.gif"></dt>
+	                    <dt><img src="./../../../assets/images/resume/qzyx_icon_5.gif"></dt>
 	                    <dd>微信小程序</dd>
 	                    <dd>根据产品需求快速完成小程序的开发。</dd>
 	                </dl>
@@ -86,9 +86,9 @@
 	            <h1>专业技能</h1>
 	            <hr>
 	            <ul class="skillsIcons">
-	                <li><img src="./../../assets/images/resume/zyjn_icon_1.png"></li>
-	                <li><img src="./../../assets/images/resume/zyjn_icon_3.png"></li>
-	                <li><img src="./../../assets/images/resume/zyjn_icon_2.png"></li>
+	                <li><img src="./../../../assets/images/resume/zyjn_icon_1.png"></li>
+	                <li><img src="./../../../assets/images/resume/zyjn_icon_3.png"></li>
+	                <li><img src="./../../../assets/images/resume/zyjn_icon_2.png"></li>
 	            </ul>
 	            <ol class="skillsIconsInfo">
 	            	<li><span>1、</span> 精通DIV+CSS(HTML5+CSS3)页面布局, 能够手写符合w3c标准的页面代码，熟悉w3c标准，熟悉HTML语义化并掌握处理浏览器兼容性问题的方法；</li><li><span>2、</span> 熟悉主流JS库/框架的使用，如jQuery/Zepto/Swiper/iScroll/BootStrap/Vue等，了解新技术框架（ES6，Babel）并具备实践经验；</li><li><span>3、</span> 熟练掌握HTML5的移动端Web开发, 具备Hybrid开发经验, 能够完成微信小程序开发相关项目；</li><li><span>4、</span> 熟练使用Ajax/Json等与后端开发工程师进行协同开发，能够快速定位和解决工作中遇到的各类技术问题；</li><li><span>5、</span> 熟悉Echarts数据化图表，Handlebars.js 模板引擎</li><li><span>6、</span> 对NodeJs/Express/KOA/Mongodb有一定的了解和工作实践；</li><li><span>7、</span> 熟练使用PHPCMS管理系统，TRS WCM管理系统，对PHP语言，JAVA语言有初步了解；</li><li><span>8、</span> 熟练使用Webstorm/Nodepad++/Sublime/Photoshop/Myeclipse等相关开发工具；</li><li><span>9、</span> 对前端工程化有初步见解，熟悉Git/Svn/Gulp/Webpack等工作流管理以及打包工具。</li>
@@ -178,7 +178,7 @@
 	</div>
 </template>
 <script>
-	import './../../assets/js/resume_index.js'
+	import './../../../assets/js/resume_index.js'
 	export default {
 		name: 'Index',
 		data(){
@@ -189,6 +189,6 @@
 	}
 </script>
 <style scoped lang="scss">
-	@import './../../assets/css/resume_base.css';
-	@import './../../assets/css/resume_main.css';
+	@import './../../../assets/css/resume_base.css';
+	@import './../../../assets/css/resume_main.css';
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<el-container class="login">
+	<el-container class="login">		
 		<el-header>
 			<h1>金银岛煤炭网业务管理系统</h1>
 		</el-header>
@@ -20,7 +20,7 @@
 	</el-container>
 </template>
 <script>
-	import { requestLogin } from './../api/api'
+	import { requestLogin } from './../../api/api.js'
 	export default {
 	data() {
 	  return {
