@@ -1,38 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './../components/pages/Home'
-import Login from './../components/pages/Login'
-import Register from './../components/pages/Register'
+import Home from './../components/Home'
+import Login from './../components/Login'
+import Register from './../components/Register'
 
-import FeelArticles from './../components/pages/articles/Index'
+import FeelArticles from './../components/articles/Index'
 
-import Emotions from './../components/pages/emotions/Index'
+import Emotions from './../components/emotions/Index'
 
-import Questions from './../components/pages/questions/Index'
+import Questions from './../components/questions/Index'
 
-import ResumeIndex from './../components/pages/resume/Index'
-import ResumeError from './../components/pages/resume/Error'
-<<<<<<< HEAD
+import ResumeIndex from './../components/resume/Index'
+import ResumeError from './../components/resume/Error'
 
-import AboutIndex from './../components/pages/about/Index'
-import AboutUs from './../components/pages/about/Us'
-import AboutContact from './../components/pages/about/Contact'
-import AboutAuthor from './../components/pages/about/Author'
+import AboutIndex from './../components/about/Index'
+import AboutUs from './../components/about/Us'
+import AboutContact from './../components/about/Contact'
+import AboutAuthor from './../components/about/Author'
 
-import MApp from './../components/m/Index'
-=======
+import Tips from './../components/common/Tip'
 
-import AboutIndex from './../components/pages/about/Index'
-import AboutUs from './../components/pages/about/Us'
-import AboutContact from './../components/pages/about/Contact'
-import AboutAuthor from './../components/pages/about/Author'
-
-import Tips from './../components/pages/common/Tip'
-
-import MIndex from './../components/m/Index'
-
->>>>>>> b3aa6197ee9d041517e90ff903d95245e197b243
-
+import AppIndex from './../components/app/Index'
 Vue.use(Router)
 
 const routes = [
@@ -84,6 +72,11 @@ const routes = [
         ]
       }
     ]
+  },  
+  {
+    path: '/app',
+    name: 'appLink',
+    component: AppIndex
   },
 	{
     path: '/login',
@@ -104,11 +97,6 @@ const routes = [
     path: '/tips',
     name: 'tipsLink',
     component: Tips
-  },
-  {
-    path: '/mApp',
-    name: 'mLink',
-    component: MIndex
   }
 ]
 

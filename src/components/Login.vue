@@ -20,11 +20,7 @@
 	</el-container>
 </template>
 <script>
-<<<<<<< HEAD:src/components/pages/Login.vue
-	import { requestLogin } from './../../api/api.js'
-=======
-	import { requestLogin } from './../../api/api'
->>>>>>> b3aa6197ee9d041517e90ff903d95245e197b243:src/components/pages/Login.vue
+	import { requestLogin } from './../api/api.js'
 	export default {
 	data() {
 	  return {

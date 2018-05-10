@@ -6,11 +6,9 @@ const config = require('../config')
 const vuxLoader = require('vux-loader')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-const vuxLoader = require('vux-loader')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
 const webpackConfig = {
   plugins: [
       new webpack.ProvidePlugin({  
@@ -35,6 +33,7 @@ const webpackConfig = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'jQuery': 'jquery/dist/jquery.min.js',
     }
   },
   module: {
@@ -72,6 +71,10 @@ const webpackConfig = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.sass$/,
+        loaders: ['style', 'css', 'sass']
       }
     ]
   },
