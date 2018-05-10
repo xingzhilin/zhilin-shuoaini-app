@@ -3,6 +3,7 @@ const path = require('path')
 const webpack = require('webpack')
 const utils = require('./utils')
 const config = require('../config')
+const vuxLoader = require('vux-loader')
 const vueLoaderConfig = require('./vue-loader.conf')
 
 const vuxLoader = require('vux-loader')

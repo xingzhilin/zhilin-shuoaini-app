@@ -20,7 +20,11 @@
 	</el-container>
 </template>
 <script>
+<<<<<<< HEAD:src/components/pages/Register.vue
 	import { requestLogin } from './../../api/api.js'
+=======
+	import { requestLogin } from './../../api/api'
+>>>>>>> b3aa6197ee9d041517e90ff903d95245e197b243:src/components/pages/Register.vue
 	export default {
 	data() {
 	  return {
@@ -81,7 +85,7 @@
 	}
 </style>
 <style lang="scss" scoped>
-	/* @import './../assets/css/login_view.css' */
+	/* @import './../../assets/css/login_view.css' */
 	.el-header{
 		height: 100px;
 		h1{

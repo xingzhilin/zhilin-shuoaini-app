@@ -12,6 +12,7 @@ import Questions from './../components/pages/questions/Index'
 
 import ResumeIndex from './../components/pages/resume/Index'
 import ResumeError from './../components/pages/resume/Error'
+<<<<<<< HEAD
 
 import AboutIndex from './../components/pages/about/Index'
 import AboutUs from './../components/pages/about/Us'
@@ -19,6 +20,18 @@ import AboutContact from './../components/pages/about/Contact'
 import AboutAuthor from './../components/pages/about/Author'
 
 import MApp from './../components/m/Index'
+=======
+
+import AboutIndex from './../components/pages/about/Index'
+import AboutUs from './../components/pages/about/Us'
+import AboutContact from './../components/pages/about/Contact'
+import AboutAuthor from './../components/pages/about/Author'
+
+import Tips from './../components/pages/common/Tip'
+
+import MIndex from './../components/m/Index'
+
+>>>>>>> b3aa6197ee9d041517e90ff903d95245e197b243
 
 Vue.use(Router)
 
@@ -86,6 +99,16 @@ const routes = [
     path:'/error',
     name: 'errorLink',
     component: ResumeError
+  },
+  {
+    path: '/tips',
+    name: 'tipsLink',
+    component: Tips
+  },
+  {
+    path: '/mApp',
+    name: 'mLink',
+    component: MIndex
   }
 ]
 
